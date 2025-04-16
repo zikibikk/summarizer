@@ -27,3 +27,12 @@ jobs:
     - name: Run tests
       run: |
         PYTHONPATH=. pytest tests/
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+    - name: Deploy imitating
+      run: |
+        echo "Successful deploy"
