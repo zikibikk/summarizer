@@ -1,3 +1,7 @@
+from src.main import add
+from src.main import subtract
+
+
 def test_add():
     assert add(5, 2) == 7
 
